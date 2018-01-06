@@ -1,0 +1,15 @@
+Feature: User shopping cart
+
+  Scenario: Adding items into shopping cart
+    Given user is on item page
+    When user selects colour/quantity
+    And clicks the add to cart option
+    Then  item is added to shopping cart
+
+    Scenario: Opening shopping cart
+      Given user had added item in shopping cart
+      When user hovers over shopping cart icon
+      Then sees dropdown
+      And clicks on view cart
+      Then user should see the added item in shopping cart
+

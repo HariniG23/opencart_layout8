@@ -1,0 +1,38 @@
+Feature: User views selected feature products
+
+  Scenario: Filtering and view bags
+    Given user is on layout8 page
+    Then wants to filter featured products
+    And clicks on the bags icon
+    Then featured bags items should be visible
+
+  Scenario: Filtering and view jewelry
+    Given user is on layout8 page
+    Then wants to filter featured products
+    And clicks on the jewelry icon
+    Then featured jewelry items should be visible
+
+  Scenario: Filtering and view men's clothing
+    Given user is on layout8 page
+    Then wants to filter featured products
+    And clicks on the men's clothing icon
+    Then featured men's clothing items should be visible
+
+  Scenario: Filtering and view shoes
+    Given user is on layout8 page
+    Then wants to filter featured products
+    And clicks on the shoes icon
+    Then featured shoes items should be visible
+
+  Scenario: Filtering and view women's wear
+    Given user is on layout8 page
+    Then wants to filter featured products
+    And clicks on the women's wear icon
+    Then featured women's wear items should be visible
+
+  Scenario: Filtering and view all items
+    Given user is on layout8 page
+    Then wants to view all featured products
+    And is on featured shoes
+    And clicks on the all icon
+    Then all items should be visible

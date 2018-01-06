@@ -1,0 +1,16 @@
+Feature: Account login features
+
+  Scenario: User login
+    Given user is at home layout8 page
+    Then user clicks on login
+    And enters email address "test.brown@gmail.com"
+    And enters password "Test123"
+    Then user should see my account page
+
+  Scenario: User Logout
+    Given user is on my account page
+    Then  clicks on logout button
+    Then user should successfully see "account Logout" message
+
+
+

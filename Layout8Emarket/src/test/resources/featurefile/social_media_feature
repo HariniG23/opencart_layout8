@@ -1,0 +1,26 @@
+Feature: Social media links
+
+  Scenario: Viewing Facebook page
+    Given user is on layout8 page
+    When user clicks on facebook icon in footer
+    Then user should be on facebook page
+
+  Scenario: Viewing Twitter page
+    Given user is on layout8 page
+    When user clicks on twitter icon in footer
+    Then user should be on twittwe page
+
+  Scenario: Viewing Pinterest page
+    Given user is on layout8 page
+    When user clicks on pinterest icon in footer
+    Then user should be on pinterest page
+
+  Scenario: Viewing GooglePlus page
+    Given user is on layout8 page
+    When user clicks on googleplus icon in footer
+    Then user should be on googleplus page
+
+  Scenario: Viewing Youtube page
+    Given user is on layout8 page
+    When user clicks on youtube icon in footer
+    Then user should be on youtube page

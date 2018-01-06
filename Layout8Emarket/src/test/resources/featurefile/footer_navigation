@@ -1,0 +1,32 @@
+Feature: Footer navigation functions
+
+  Scenario: Navigate to homepage
+    Given user is on layout8 page
+    When user clicks on home button in footer
+    Then user should be on home page
+
+  Scenario: Navigate to features
+    Given user is on layout8 page
+    When user clicks on features button in footer
+    Then user should be on features page
+
+  Scenario: Navigate to collections
+    Given user is on layout8 page
+    When user clicks on home button in footer
+    Then user should be on home page
+
+  Scenario: Navigate to shop
+    Given user is on layout8 page
+    When user clicks on shop button in footer
+    Then user should be on shop page
+
+  Scenario: Navigate to about us
+    Given user is on layout8 page
+    When user clicks on about us button in footer
+    Then user should be on about us page
+
+  Scenario: Navigate to contact us
+    Given user is on layout8 page
+    When user clicks on contact us button in footer
+    Then user should be on contact us
+

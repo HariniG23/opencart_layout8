@@ -1,0 +1,45 @@
+Feature: Side navigation bar actions
+
+
+  Scenario: User navigates to top of page
+    Given user is on bottom/middle of the layout8 page
+    When user hovers over navigation bar
+    And clicks on the go to top icon
+    Then user should be on start of the layout8 page
+
+  Scenario: View recently viewed items
+    Given user has already viewed items
+    And needs to view previously viewed items
+    When user hovers over navigation bar
+    Then user clicks on recent view icon
+    Then user should view recent items as a quick view
+
+  Scenario: View shopping cart
+    Given user had added item in shopping cart
+    And needs to verify added item
+    Then user hovers over navigation bar
+    Then user clicks on cart icon
+    Then user should view added items in the quick view
+
+  Scenario: Search in navigation bar
+    Given user is on layout8 page
+    And want to search for item
+    When user hovers over navigation bar
+    Then user clicks on the search icon
+    And enters "...."
+    Then views result page
+
+  Scenario: View user account
+    Given user is logged in
+    And wants to view their account
+    When user hovers over navigation bar
+    Then user clicks on account icon
+    Then views their account details in quick view
+
+  Scenario: View categories in navigation bar
+    Given user is on layout8 page
+    And wants to view other categories
+    When user hovers over navigation bar
+    Then user clicks on categories icon
+    And views categories in quick view
+

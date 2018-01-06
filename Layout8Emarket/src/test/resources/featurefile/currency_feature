@@ -1,0 +1,22 @@
+Feature: Currency changing
+
+  Scenario: View prices in dollar
+    Given user is on layout8 page
+    Then user wants to view prices in dollar
+    When user hovers over currency icon
+    And selects dollar from the dropdown
+    Then see prices in dollar
+
+  Scenario: View prices in pounds
+    Given user is on layout8 page
+    Then user wants to view prices in pounds
+    When user hovers over currency icon
+    And selects pounds from the dropdown
+    Then see prices in pounds
+
+  Scenario: View prices in euro
+    Given user is on layout8 page
+    Then user wants to view prices in euro
+    When user hovers over currency icon
+    And selects pounds from the dropdown
+    Then see prices in euro

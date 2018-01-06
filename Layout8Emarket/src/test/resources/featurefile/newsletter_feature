@@ -1,0 +1,19 @@
+Feature: Signing up for newsletter
+
+  Scenario: User signing up for newsletter with valid emailID
+    Given user if at home layout8 page
+    When user enters valid email address "harinignanam2305@gmail.com"
+    And clicks subscribe
+    Then user should see message subscription successfull
+
+  Scenario: User signing up for newsletter with existing emailID
+    Given user if at home layout8 page
+    When user enters existing email address "harinignanam2305@gmail.com"
+    And clicks subscribe
+    Then user should see message email already exist
+
+  Scenario: User signing up for newsletter with invalid emailID
+    Given user if at home layout8 page
+    When user enters valid email address "hhjsjlslsksdj"
+    And clicks subscribe
+    Then user should see message invalid email

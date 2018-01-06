@@ -1,0 +1,31 @@
+Feature: Header navigation
+
+  Scenario: View dropdown options for features page
+    Given user is on layout 8 page
+    When user hover over feature icon
+    Then user should view dropdown for other feature page
+
+  Scenario: View dropdown options for layouts page
+    Given user is on layouts 8 page
+    When user hover over layout icon
+    Then user should view dropdown for other layouts page
+
+  Scenario: View dropdown options for features page
+    Given user is on layout 8 page
+    When user hover over features icon
+    Then user should view dropdown for other features page
+
+  Scenario: View dropdown options for shop page
+    Given user is on layout 8 page
+    When user hover over shop icon
+    Then user should view dropdown for other shop page
+
+  Scenario: View dropdown options for blog page
+    Given user is on layout 8 page
+    When user hover over blog icon
+    Then user should view dropdown for other blog page
+
+  Scenario: View dropdown options for pages page
+    Given user is on layout 8 page
+    When user hover over pages icon
+    Then user should view dropdown for other pages page

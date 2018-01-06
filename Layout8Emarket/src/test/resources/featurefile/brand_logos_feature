@@ -1,0 +1,18 @@
+Feature: Brand Logos
+
+  Scenario: Filter chanel brand items
+    Given user is on layout8 page
+    When user clicks on chanel brand logo
+    Then user should view items only by chanel brand
+
+  Scenario: Filter versace brand items
+    Given user is on layout8 page
+    When user clicks on versace brand logo
+    Then user should view items only by versace brand
+
+  Scenario: Filter rayban brand items
+    Given user is on layout8 page
+    When user clicks on rayban brand logo
+    Then user should view items only by rayban brand
+
+

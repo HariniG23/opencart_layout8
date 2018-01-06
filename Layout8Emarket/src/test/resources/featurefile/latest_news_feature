@@ -1,0 +1,15 @@
+Feature Latest news
+
+  Scenario: View latest news
+    Given user is on layout8 page
+    Then user scrolls to the bottom of the page
+    And clicks on the latest news
+    Then user should view the latest news
+
+
+  Scenario: View different news selections
+    Given user is on layout8 page
+    Then user scrolls to the bottom of the page
+    And clicks on the news arrow
+    Then user should view news selections
+

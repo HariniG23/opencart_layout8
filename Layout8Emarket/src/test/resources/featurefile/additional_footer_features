@@ -1,0 +1,20 @@
+Feature: Additional features that are provided
+
+  Scenario: Free Shipping option
+    Given user is on layout8 page
+    Then user scrolls to the bottom of the page
+    And clicks on free shipping icon
+    Then user should view page with shipping details
+
+  Scenario: Money Guarantee option
+    Given user is on layout8 page
+    Then user scrolls to the bottom of the page
+    And clicks on money guarantee icon
+    Then user should view page with money guarantee details
+
+  Scenario:  support option
+    Given user is on layout8 page
+    Then user scrolls to the bottom of the page
+    And clicks on support icon
+    Then user should view page with support details
+

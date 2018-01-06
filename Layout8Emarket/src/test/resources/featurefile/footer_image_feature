@@ -1,0 +1,7 @@
+Feature Footer image link
+
+  Scenario: View item image in footer
+    Given user is on layout8 page
+    Then scrolls to the bottom of the page
+    And clicks on the image in footer
+    Then user should view the image in quick view

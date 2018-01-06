@@ -1,0 +1,6 @@
+Feature: User searching for items in search box
+
+Scenario: Search from the search bar
+Given user is at layout8 page
+When user enters "bags" into the search bar
+Then items related to"bags" are shown on the results page
